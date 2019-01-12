@@ -13,14 +13,12 @@ Query example: SELECT * FROM ADDRESS_BOOK
 ## Rest services
 Addessbook is a rest microservice with two endpoints:
 
-1. POST 
-- /addressbooks 
+1. POST ~/addressbooks 
 - to save a new address information for a given name | update exiting one for a given name
 - Http status : OK (200) 
 - Http status : INTERNAL SERVER ERROR (500) 
                       
-2. GET 
-- /addressbooks/{name} 
+2. GET ~/addressbooks/{name} 
 - get address by name
 - Http status : OK (200)                            
 - Http status : NOT FOUND (404)
