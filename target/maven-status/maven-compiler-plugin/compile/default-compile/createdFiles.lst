@@ -1,0 +1,9 @@
+service\AddressBookService.class
+rest\AddressBookResponse$AddressBookResponseBuilder.class
+rest\AddressBookControllers.class
+rest\AddressBookResponse.class
+service\Application.class
+rest\AddressBookRequest$AddressBookRequestBuilder.class
+model\AddressBook.class
+rest\AddressBookRequest.class
+repository\AddressBookRepository.class

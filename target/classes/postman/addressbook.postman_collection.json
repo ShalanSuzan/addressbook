@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "ac189a3c-c0d1-48f5-b9dd-a498b49783ac",
+		"name": "addressbook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add new address book",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ce53c3b5-4407-4745-bb37-73b9bfadeb5f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Sara Larsson\",\n\t\"address\": \"Slöjdvägen 67 17789\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8090/addressbooks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"addressbooks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get address",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ce53c3b5-4407-4745-bb37-73b9bfadeb5f",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8090/addressbooks/Sara Larsson",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"addressbooks",
+						"Sara Larsson"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
