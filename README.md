@@ -3,9 +3,9 @@ A rest service to save user address information.
 
 ## How to run the application?
 1. Start clone the repository to access the code. 
-´´´
-git clone https://github.com/Yardina/addressbook.git
-´´´
+
+> git clone https://github.com/Yardina/addressbook.git
+
 
 2. Run the application useing pash script:   
 > chmod +x run.sh && ./run.sh
