@@ -18,12 +18,14 @@ Addressbook contains a lightweight h2 database, that comes with own UI. You can 
 
 URL: http://localhost:8090/console/  
 
-You may even need to give extra details. Example: 
+You may even need to give extra details: 
 
+```
 Datasource url:  jdbc:h2:mem:addressbook
 Table name: ADDRESS_BOOK
 Query example: SELECT * FROM ADDRESS_BOOK  
- 
+```
+
  
 ## Rest services
 Addessbook is a rest microservice with two endpoints where you add a new address and search for a given address. 
